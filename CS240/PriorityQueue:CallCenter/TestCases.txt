@@ -1,0 +1,9 @@
+Note: because of the randomly generated number of calls all simulations come out differenlty
+These are the parameters used for testing
+
+Simulation Length      arrival rate
+30                     .3
+30                      1
+55                     .8   
+100                    .2
+45                     .1
