@@ -1,0 +1,144 @@
+warehouse.c:19:41: warning: data argument not used by format string [-Wformat-extra-args]
+                printf("Part Num: %d, Bin: $d\n", pn, bin);
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~      ^
+warehouse.c:14:6: warning: unused variable 'bins' [-Wunused-variable]
+        int bins[100] = {0};
+            ^
+2 warnings generated.
+warehouse.c:14:6: warning: unused variable 'bins' [-Wunused-variable]
+        int bins[100] = {0};
+            ^
+1 warning generated.
+warehouse.c:14:6: warning: unused variable 'bins' [-Wunused-variable]
+        int bins[100] = {0};
+            ^
+1 warning generated.
+warehouse.c:49:35: error: expected ';' at end of declaration
+                                int count = bins[tempBench[i]] // gets the bench at position i and then gets the count of that bench.
+                                                              ^
+                                                              ;
+warehouse.c:75:2: error: expected 'while' in do/while loop
+        } while(fetchNextPart());
+        ^
+warehouse.c:17:2: note: to match this 'do'
+        do {
+        ^
+2 errors generated.
+warehouse.c:75:2: error: expected 'while' in do/while loop
+        } while(fetchNextPart());
+        ^
+warehouse.c:17:2: note: to match this 'do'
+        do {
+        ^
+1 error generated.
+warehouse.c:6:1: error: unknown type name 'bool'
+bool checkIfInTempBench(int tempBench[], int bin){
+^
+warehouse.c:7:21: warning: sizeof on array function parameter will return size of 'int *' instead of 'int []' [-Wsizeof-array-argument]
+        int length = sizeof(tempBench)/sizeof(int);
+                           ^
+warehouse.c:6:29: note: declared here
+bool checkIfInTempBench(int tempBench[], int bin){
+                            ^
+warehouse.c:10:11: error: use of undeclared identifier 'true'
+                        return true;
+                               ^
+warehouse.c:13:9: error: use of undeclared identifier 'false'; did you mean 'else'?
+        return false;
+               ^~~~~
+               else
+warehouse.c:13:9: error: expected expression
+1 warning and 4 errors generated.
+warehouse.c:6:1: error: unknown type name 'bool'
+bool checkIfInTempBench(int &tempBench[], int bin){
+^
+warehouse.c:6:29: error: expected ')'
+bool checkIfInTempBench(int &tempBench[], int bin){
+                            ^
+warehouse.c:6:24: note: to match this '('
+bool checkIfInTempBench(int &tempBench[], int bin){
+                       ^
+warehouse.c:6:29: error: parameter name omitted
+bool checkIfInTempBench(int &tempBench[], int bin){
+                            ^
+warehouse.c:7:22: error: use of undeclared identifier 'tempBench'
+        int length = sizeof(tempBench)/sizeof(int);
+                            ^
+warehouse.c:9:6: error: use of undeclared identifier 'tempBench'
+                if(tempBench[i] == bin){
+                   ^
+warehouse.c:9:22: error: use of undeclared identifier 'bin'
+                if(tempBench[i] == bin){
+                                   ^
+warehouse.c:10:11: error: use of undeclared identifier 'True'
+                        return True;
+                               ^
+warehouse.c:13:9: error: use of undeclared identifier 'False'; did you mean 'else'?
+        return False;
+               ^~~~~
+               else
+warehouse.c:13:9: error: expected expression
+9 errors generated.
+warehouse.c:104:3: error: use of undeclared identifier 'count'
+                count[i] = binCount[tempBench[i]]; // count of each bin
+                ^
+1 error generated.
+warehouse.c:100:4: error: use of undeclared identifier 'count'
+                        count[i] = binCount[tempBench[i]]; // count of each bin
+                        ^
+1 error generated.
+warehouse.c:101:3: error: use of undeclared identifier 'count'
+                count[i] = binCount[tempBench[i]]; // count of each bin
+                ^
+1 error generated.
+warehouse.c:98:16: error: expected ';' after expression
+                                binCost+=.1
+                                           ^
+                                           ;
+warehouse.c:114:16: error: expected ';' after expression
+                                binCost+=.1
+                                           ^
+                                           ;
+2 errors generated.
+warehouse.c:84:5: error: use of undeclared identifier 'binCost'; did you mean 'binCount'?
+                                binCost+=.15;
+                                ^~~~~~~
+                                binCount
+warehouse.c:26:6: note: 'binCount' declared here
+        int binCount[100] = {0};
+            ^
+warehouse.c:84:12: error: invalid operands to binary expression ('int [100]' and 'double')
+                                binCost+=.15;
+                                ~~~~~~~^ ~~~
+warehouse.c:86:5: warning: implicit declaration of function 'printTempBench' is invalid in C99 [-Wimplicit-function-declaration]
+                                printTempBench(tempBench);
+                                ^
+1 warning and 2 errors generated.
+warehouse.c:84:5: error: use of undeclared identifier 'binCost'; did you mean 'binCount'?
+                                binCost+=.15;
+                                ^~~~~~~
+                                binCount
+warehouse.c:26:6: note: 'binCount' declared here
+        int binCount[100] = {0};
+            ^
+warehouse.c:84:12: error: invalid operands to binary expression ('int [100]' and 'double')
+                                binCost+=.15;
+                                ~~~~~~~^ ~~~
+warehouse.c:86:5: warning: implicit declaration of function 'printTempBench' is invalid in C99 [-Wimplicit-function-declaration]
+                                printTempBench(tempBench);
+                                ^
+1 warning and 2 errors generated.
+warehouse.c:84:5: error: use of undeclared identifier 'binCost'; did you mean 'binCount'?
+                                binCost+=.15;
+                                ^~~~~~~
+                                binCount
+warehouse.c:26:6: note: 'binCount' declared here
+        int binCount[100] = {0};
+            ^
+warehouse.c:84:12: error: invalid operands to binary expression ('int [100]' and 'double')
+                                binCost+=.15;
+                                ~~~~~~~^ ~~~
+warehouse.c:86:5: warning: implicit declaration of function 'printTempBench' is invalid in C99 [-Wimplicit-function-declaration]
+                                printTempBench(tempBench);
+                                ^
+1 warning and 2 errors generated.
