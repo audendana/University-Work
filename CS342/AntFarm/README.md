@@ -87,3 +87,10 @@ The simulation ends when there is 1 (or less) active colonies.
 * On initialization, a Queen object should be created (__builder__), then should select a random location in the meadow for their ant hill.
     * The queen should configure the anthill first with initial number of rooms, food, and ants, then place it in the meadow.
 * Warriors should have multiple __decorator__ classes that wrap the warrior in additional functionality
+
+
+### Testing
+* To run this do
+```
+  python3 project2.py
+```
